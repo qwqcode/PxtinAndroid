@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:cardCornerRadius="3sp"
+        card_view:cardElevation="0.1sp">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:descendantFocusability="blocksDescendants"
+                  android:orientation="vertical">
+
+        <com.pxtin.android.ui.DynamicHeightImageView
+                android:id="@+id/picContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#FFF"
+                android:scaleType="fitXY" />
+
+        <LinearLayout
+                android:id="@+id/picInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+            <TextView
+                    android:id="@+id/picDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:textColor="#202020"
+                    android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/picUserInfo"
+                android:background="#fdfdfd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+            <com.pxtin.android.ui.CircleImageView
+                    android:id="@+id/picUserImg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="#f9f9f9"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop" />
+
+            <!--<com.qwqaq.deviewer.ui.DynamicHeightImageView
+                    android:id="@+id/picUserImg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="centerCrop" />-->
+
+            <!--<View
+                    android:id="@+id/line"
+                    android:layout_width="1sp"
+                    android:layout_height="match_parent"
+                    android:background="#eff3f5" />-->
+
+            <TextView
+                    android:id="@+id/picUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#313131"
+                    android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

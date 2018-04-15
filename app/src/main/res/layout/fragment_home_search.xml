@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:background="@color/colorWhite"
+              android:layout_width="fill_parent"
+              android:layout_height="?actionBarSize"
+              android:focusableInTouchMode="true">
+
+    <ImageView
+            android:id="@+id/search_back_btn"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:scaleType="center"
+    />
+
+    <EditText
+            android:textSize="20.0sp"
+            android:textColor="#ff404040"
+            android:id="@+id/search_edit_text"
+            android:background="@color/colorWhite"
+            android:layout_width="0.0dip"
+            android:layout_height="32.0dip"
+            android:layout_marginLeft="32.0dip"
+            android:layout_marginRight="32.0dip"
+            android:layout_weight="1.0"
+            android:inputType="text"
+            android:hint="输入关键字"
+            android:imeOptions="actionSearch">
+        <requestFocus/>
+        </EditText>
+
+    <ImageView
+            android:id="@+id/search_input_btn"
+            android:layout_width="24.0dip"
+            android:layout_height="24.0dip"
+            android:layout_marginRight="16.0dip"
+            android:src="@drawable/ic_search_black_24dp"
+            android:scaleType="centerInside"
+    />
+</LinearLayout>

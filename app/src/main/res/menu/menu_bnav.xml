@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/bottom_nav_a"
+          android:checked="true"
+          android:title="主页"
+          android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item android:id="@+id/bottom_nav_b"
+          android:title="探索"
+          android:icon="@drawable/ic_explore_black_24dp"/>
+
+    <item android:id="@+id/bottom_nav_d"
+          android:title="我"
+          android:icon="@drawable/ic_person_black_24dp"/>
+</menu>

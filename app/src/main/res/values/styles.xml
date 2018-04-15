@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- APP 基本主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Light 主题 -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="@style/AppTheme" />
+
+    <style name="AppTheme.Light.Blue" parent="@style/AppTheme.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--<item name="android:windowAnimationStyle">@style/fadeSwitch</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar.Blue" parent="@style/AppTheme.Light.Blue">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimaryDark">#000</item>
+        <!--<item name="android:windowAnimationStyle">@style/fadeSwitch</item>-->
+    </style>
+
+    <!-- Activity 渐变切换动画 -->
+    <!--<style name="fadeSwitch" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>-->
+
+</resources>

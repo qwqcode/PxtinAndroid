@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pxtin</string>
+    <string name="splash_after_logo">一个属于你的图片灵感库</string>
+    <string name="splash_copyright">Copyright © 2017 Pxtin.net</string>
+
+    <string name="home_search_bar_placeholder">灵感搜寻</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
